@@ -1,34 +1,88 @@
+## Desafio BugBank
 
+<div align="center">
+<img src="bugbank.png" height="100" alt="Quantidade de Testes"  />
+</div>
 
+## 📋 Descrição
 
+Este projeto foi criado como atividade final no bootcamp AVANTI 2026.2, focando em automação de testes utilizando Selenium e Python. O objetivo principal foi garantir a qualidade e confiabilidade das funcionalidades da aplicação Bugbank através de testes automatizados. O projeto abrange todo o ciclo de testes, desde o planejamento até a implementação.
 
+## 🚀 Tecnologias Utilizadas
 
-🧪 Estrutura do Projeto
+- Python: Linguagem principal utilizada para escrever os testes.
+- Selenium: Ferramenta para automação de navegadores, utilizada para interagir com a interface da aplicação Bugbank.
+- JUnit: Framework de testes utilizado para estruturar e executar os testes automatizados.
 
-.
-├── 📁 /pages                       # Contém os arquivos Page Object Model (POM) para mapeamento e interação com as páginas da aplicação
-│   └── 🧪 SignUpPage.ts            # Abstração da página de cadastro de usuário
-│   └── 🧪 LoginPage.ts             # Abstração da página de login
-│   └── 🧪 TransferPage.ts          # Abstração da página de transferência
-│   └── 🧪 BankStatementPage.ts     # Abstração da página de extrato
-│ 
-├── 📁 /tests                       # Contém as suítes de testes e seus respectivos casos
-│   └── 🧪 signup.spec.ts           # Testes automatizados do cenário de cadastro de usuário
-│   └── 🧪 login.spec.ts            # Testes automatizados do cenário de login na plataforma
-│   └── 🧪 transfer.spec.ts         # Testes automatizados do cenário de transferência de valores
-│   └── 🧪 bankstatement.spec.ts    # Testes automatizados do cenário de extrato da conta
-│
-├── 📁 /fixtures                    # Define dados fixos reutilizáveis, como criação de contas com ou sem saldo para os testes 
-│   └── 🧪 accounts.ts              # Fixture responsável pela criação das contas e captura das informações de número da conta e dígito
-│   └── 🧪 dataTest.ts              # Fixture com o papel de centralizar o uso das variáveis de ambiente dentro dos testes, deixando o código mais limpo, reutilizável e fácil de manter
-│
-├── 📁 /utils                       # Funções auxiliares que oferecem suporte à lógica dos testes
-│   └── 🧪 dateUtils.ts             # Formatação de data no padrão PT-BR para uso nos testes
-│   └── 🧪 formatUtils.ts           # Formatação de string em número e vice-versa para uso em ações nos testes
-│
-├── 📄 README.md                    # Documentação inicial do projeto
-├── 📄 package.json                 # Gerenciador de dependências e scripts do projeto
-├── 📄 package-lock.json            # Controle de versão exata das dependências instaladas
-├── 📄 playwright.config.ts         # Configuração global dos testes no Playwright
+### 🛠️ Funcionalidades Implementadas
 
+- Planejamento de Testes: Criação de um plano de testes completo, cobrindo todas as funcionalidades críticas da aplicação Bugbank.
+- Cenários de Testes: Definição de cenários de testes claros e abrangentes, garantindo a cobertura de todos os casos de uso.
+- Automação: Implementação da automação de testes com Selenium e Java, permitindo a execução repetida dos testes de forma eficiente.
+- Integração com Cucumber: Escrita dos testes em Gherkin, permitindo a criação de testes legíveis e fáceis de entender.
 
+### 🔍 Como Executar
+
+Passo-a-passo para que você tenha um ambiente de desenvolvimento em execução.
+
+1. Clone o repositório:
+
+   ```sh
+   git clone https://github.com/olavoanselmo/QA_BugBank.git
+   ```
+
+2. Navegue até o diretório do projeto:
+
+   ```sh
+   cd Automacao
+   ```
+
+3. Compile o projeto usando Maven:
+
+   ```sh
+   mvn clean install
+   ```
+
+4. Execute os testes:
+   ```sh
+   mvn test
+   ```
+
+### 🔩 Resultado dos Testes
+
+Confira o resultado abaixo resultado aa execução dos testes automatizados:
+
+<div align="center">
+<img src="./Test.png" height="300" alt="Quantidade de Testes"  />
+</div>
+
+## 📦 Estrutura do Projeto
+
+```plaintext
+|-- src/
+|   |-- main/
+|   |   |-- java/
+|   |   |   |-- pages/
+|   |   |   |-- utils/
+|   |-- test/
+|   |   |-- java/
+|   |   |   |-- hooks/
+|   |   |   |-- runners/
+|   |   |   |-- steps/
+|   |   |-- resources/
+|   |   |   |-- features/
+|-- pom.xml
+|-- README.md
+```
+
+## Referência
+
+- [Documentação Selenium Boas Práticas.](https://www.selenium.dev/pt-br/documentation/test_practices/design_strategies/)
+- [Documentação cucummber](https://cucumber.io/docs/cucumber/)
+- [Site BugBank](https://bugbank.netlify.app/)
+
+## ✒️ Autores
+
+Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
+
+- [Linkedin](https://www.linkedin.com/in/chaiene-caroline/)
